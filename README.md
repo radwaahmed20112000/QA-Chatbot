@@ -1069,8 +1069,7 @@ In our version, the engine is a classification model (Naive Bayes classification
 
 #### **Model Architecture**
 
-
-        An LSTM Encoder-Decoder model.
+An LSTM Encoder-Decoder model.
 
 
 #### **Results**
@@ -1154,9 +1153,7 @@ In our version, the engine is a classification model (Naive Bayes classification
 ## 3- Meta Engine Model:
 
 
-    The Meta Engine Model is a multinomial naive bayes classifier that classifies questions into 4 categories:
-
-
+The Meta Engine Model is a multinomial naive bayes classifier that classifies questions into 4 categories:
 
 * Clothing, Shoes, and Jewelry = 0
 * Health and Personal Care = 1
@@ -1181,13 +1178,13 @@ In our version, the engine is a classification model (Naive Bayes classification
 #### **Model Architecture**
 
 
-        The model is implemented as an sklearn pipeline with 3 stages :
+The model is implemented as an sklearn pipeline with 3 stages :
 
 * Count Vectorizer
 * Transformer
 * Multinomial Naive Bayes Classifier
 
-        The model is not saved, it should be trained each time it’s used on the same dataset, as the model is already very simple and fast
+The model is not saved, it should be trained each time it’s used on the same dataset, as the model is already very simple and fast
 
 
 #### **Results**
@@ -1197,10 +1194,10 @@ In our version, the engine is a classification model (Naive Bayes classification
 
 
 
-#### **Inference Examples**
+### **Inference Examples**
 
 
-**Example 1 **
+**Example 1**
 
 
 **Question:** how are you
@@ -1375,7 +1372,7 @@ In our version, the engine is a classification model (Naive Bayes classification
 **Comments:** the model correctly classified the question and generated a good answer, although the value of bleu score is low.
 
 
-### **Pre-trained Encoder-Decoder Model:**
+## **Pre-trained Encoder-Decoder Model:**
 
 
 
@@ -1394,8 +1391,7 @@ In our version, the engine is a classification model (Naive Bayes classification
 
 * Comment: The training stopped because CUDA memory ran out. Also, the validation and training loss decrease very slowly, and that would require many hours of training on the GPU.
 
-#### 
-    **Training Arguments**
+#### **Training Arguments**
 
 
 	
@@ -1409,7 +1405,7 @@ In our version, the engine is a classification model (Naive Bayes classification
 Batch size  = 64
 
 
-#### **Inference Examples**
+### **Inference Examples**
 
 
 **Example 1**
@@ -1520,7 +1516,7 @@ Batch size  = 64
 * Unlike machine translation problems, correct references/answers have much more variety and it’s difficult to list references for evaluating a chatbot model.
 
 
-### **References**
+## **References**
 
 
 
@@ -1533,7 +1529,7 @@ Batch size  = 64
 * [How to Implement Seq2seq Model | cnvrg.io](https://cnvrg.io/seq2seq-model/)
 
 
-### **Source Code**
+## **Source Code**
 
 
 
