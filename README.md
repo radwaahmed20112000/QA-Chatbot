@@ -810,32 +810,30 @@ Validation Accuracy = 27.7% \
 **Comments:** the model could recognize that it’s a yes/no question and give a relevant answer, although the value of bleu score is low.
 
 
-### **SuperAgent Model**
+## **SuperAgent Model**
 
 
 ![alt_text](images/images/superagent.png "image_tooltip")
 
 
 
-## Overview:
+### Overview:
 
 The SuperAgent model basically receives a question from the user then sends it to the meta engine, here the engine chooses one of four trained models, according to some criteria, to pass the question to. The engine receives the answer and replies to the user.
 
 The four models used in SuperAgent are the following: Clothes model, Health model, Sports model, and ChitChat model.
 
 
-## Meta Engine:
+### Meta Engine:
 
 In our version, the engine is a classification model (Naive Bayes classification). It predicts the label of the question sent to it. The label decides which model should be used to answer the user’s question. \
- \
- \
 
 
 
-## Models Architecture and Results
+### Models Architecture and Results
 
 
-## 1- Chitchat Model:
+### 1- Chitchat Model:
 
 
 #### **Model Settings**
@@ -956,7 +954,7 @@ In our version, the engine is a classification model (Naive Bayes classification
 **Comments:** the answer is very good and matches human behavior, although the value of bleu score is low.
 
 
-# 2- Health Model, Sports Model and Clothing Model:
+### 2- Health Model, Sports Model and Clothing Model:
 
 
 #### **Model Settings**
