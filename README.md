@@ -111,12 +111,9 @@ Before training our models, hyperparameter tuning is performed on the GRU encode
         Validation Loss: 0.6629		Validation Accuracy: 31.39 %
 
 
-            
-
-<p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image11.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image11.png "image_tooltip")
+![alt_text](images/images/lr0.001.png "image_tooltip")
 
 
 2. Lr = 0.01 
@@ -126,12 +123,8 @@ Before training our models, hyperparameter tuning is performed on the GRU encode
         Validation Loss: 0.7172 			Validation Accuracy: 29.99%
 
 
-            
 
-<p id="gdcalert12" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image12.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert13">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image12.png "image_tooltip")
+![alt_text](images/images/lr0.01.png "image_tooltip")
 
 
 
@@ -145,11 +138,7 @@ Before training our models, hyperparameter tuning is performed on the GRU encode
 
 
             
-
-<p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image13.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image13.png "image_tooltip")
+![alt_text](images/images/exp_decay1.png "image_tooltip")
 
 
 4. Exponential learning rate decay (lr = 0.01, decay_steps = 10000, decay_rate = 0.9) 
@@ -159,12 +148,8 @@ Before training our models, hyperparameter tuning is performed on the GRU encode
         Validation Loss: 0.7123			Validation Accuracy: 30.13%
 
 
-            
 
-<p id="gdcalert14" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image14.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert15">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image14.png "image_tooltip")
+![alt_text](images/images/exp_decay2.png "image_tooltip")
 
 
 
@@ -285,6 +270,7 @@ Validation Accuracy = 27.7% \
 
 #### **Model Architecture**
 
+![alt_text](images/images/gru.png "image_tooltip")
 
 #### **Results**
 
@@ -400,6 +386,7 @@ Validation Accuracy = 27.7% \
 
 #### **Model Architecture**
 
+![alt_text](images/images/lstm.png "image_tooltip")
 
 #### **Results**
 
@@ -512,6 +499,7 @@ Validation Accuracy = 27.7% \
 
 #### **Model Architecture**
 
+![alt_text](images/images/glove.png "image_tooltip")
 
 #### **Results**
 
@@ -624,6 +612,7 @@ Validation Accuracy = 27.7% \
 
 #### **Model Architecture**
 
+![alt_text](images/images/bidirectional 2.png "image_tooltip")
 
 #### **Results**
 
@@ -738,12 +727,7 @@ Validation Accuracy = 27.7% \
 #### **Model Architecture**
 
 
-    
-
-<p id="gdcalert15" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image15.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert16">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image15.jpg "image_tooltip")
+![alt_text](images/images/attention.png "image_tooltip")
 
 
 
@@ -829,11 +813,7 @@ Validation Accuracy = 27.7% \
 ### **SuperAgent Model**
 
 
-
-<p id="gdcalert16" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image16.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert17">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image16.png "image_tooltip")
+![alt_text](images/images/superagent.png "image_tooltip")
 
 
 
@@ -1380,29 +1360,10 @@ The model is not saved, it should be trained each time it’s used on the same d
 * Bert uncased tokenizer is used for tokenization.
 * We used the chitchat data to train this model
 * Total number of epochs = 8
-
-    
-
-<p id="gdcalert17" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image17.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert18">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image17.png "image_tooltip")
-
+* Training Loss = 4.9
+* Validation Loss = 4.9
 
 * Comment: The training stopped because CUDA memory ran out. Also, the validation and training loss decrease very slowly, and that would require many hours of training on the GPU.
-
-#### **Training Arguments**
-
-
-	
-
-<p id="gdcalert18" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image18.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert19">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image18.png "image_tooltip")
-
-
-Batch size  = 64
 
 
 ### **Inference Examples**
