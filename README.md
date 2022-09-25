@@ -1128,7 +1128,7 @@ An LSTM Encoder-Decoder model.
 
 
 
-## 3- Meta Engine Model:
+### 3- Meta Engine Model:
 
 
 The Meta Engine Model is a multinomial naive bayes classifier that classifies questions into 4 categories:
@@ -1487,12 +1487,3 @@ The model is not saved, it should be trained each time it’s used on the same d
 * [How To Design Seq2Seq Chatbot Using Keras Framework | by Nikita Schneider | The Startup | Medium](https://medium.com/swlh/how-to-design-seq2seq-chatbot-using-keras-framework-ae86d950e91d)
 * [How to Implement Seq2seq Model | cnvrg.io](https://cnvrg.io/seq2seq-model/)
 
-
-## **Source Code**
-
-
-
-* [Basic Chatbot Colab Link](https://colab.research.google.com/drive/1iW7VM3i5Xh0IOlvwujh9LLRqEz9YXGgZ?usp=sharing) 
-* [Attention Model Colab Link](https://colab.research.google.com/drive/1ofouFpo1LSJ4mwJ0F_M8fiQASNMDtWrU?usp=sharing)
-* [SuperAgent Colab Link](https://colab.research.google.com/drive/1Zk_LMIN-cGHf395OWU-Pp3tSsy8mptVZ?usp=sharing)
-* [Pre-trained Bert Colab Link](https://colab.research.google.com/drive/1Wmx8eEZRughUMfINsMqAA15TZJUqc0Ia?usp=sharing)
