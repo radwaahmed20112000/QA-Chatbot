@@ -1,10 +1,9 @@
 ## Problem Statement
 
-A chatbot is a NLP model that learns from data based on human-to-human dialogue. Our model will be trained and tested on a QA dataset to imitate human's ability to answer questions. The chatbot model is a generative model as it doesn’t use a predefined repository for answering questions and generates answers word by word. 
+A chatbot is an NLP model that learns from data based on human-to-human dialogue. Our model will be trained and tested on a QA dataset to imitate human's ability to answer questions. The chatbot model is a generative model as it doesn’t use a predefined repository for answering questions and generates answers word by word. 
 
 
 ## Datasets
-
 
 ### Amazon Data [link](http://jmcauley.ucsd.edu/data/amazon/qa/)
 
